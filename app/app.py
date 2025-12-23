@@ -22,7 +22,7 @@ st.write(
 
 
 st.info(
-    "📱 **On mobile devices:** Tap the ☰ icon (top-left) to open the input panel and enter asteroid parameters."
+    "📱 **On mobile devices:** Tap the >> icon (top-left) to open the input panel and enter asteroid parameters."
 )
 
 st.sidebar.header("☄️ Asteroid Parameters")
