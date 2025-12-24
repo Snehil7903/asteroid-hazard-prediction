@@ -14,7 +14,7 @@ scaler = joblib.load("models/scaler.pkl")
 
 st.set_page_config(page_title="Asteroid Hazard Prediction", layout="centered")
 
-st.title("☄️ Asteroid Hazard Prediction System")
+st.title("Asteroid Hazard Prediction System")
 st.write(
     "This application predicts whether a Near-Earth Object (NEO) "
     "is potentially hazardous using machine learning models."
@@ -53,14 +53,14 @@ miss_distance = st.sidebar.number_input(
 )
 
 
-st.sidebar.header("🧠 Model Selection")
+st.sidebar.header("Model Selection")
 
 model_choice = st.sidebar.selectbox(
     "Choose Machine Learning Model",
     ("Logistic Regression", "KNN", "SVM", "Decision Tree")
 )
 
-st.markdown("### 🔍 Model Insight")
+st.markdown("Model Insight")
 
 model_descriptions = {
     "Logistic Regression": "Linear probabilistic model, fast and interpretable.",
@@ -102,7 +102,7 @@ else:
     model = dt
     prob = model.predict_proba(input_data)[0][1]
 
-st.markdown("### 📊 Prediction Confidence")
+st.markdown("Prediction Confidence")
 
 st.progress(float(prob))
 st.write(f"Confidence Level: **{prob*100:.2f}%**")
@@ -111,7 +111,7 @@ st.write(f"Confidence Level: **{prob*100:.2f}%**")
 
 prediction = "Hazardous" if prob >= 0.5 else "Not Hazardous"
 
-st.markdown("### 🚀 Prediction Result")
+st.markdown("Prediction Result")
 
 if prob >= 0.7:
     st.error("⚠️ HIGH RISK: Potentially Hazardous Asteroid")
@@ -124,7 +124,7 @@ st.caption(
     "Note: Miss distance and absolute magnitude have the strongest influence on risk prediction."
 )
 
-st.markdown("### 🏆 Model Performance (ROC-AUC)")
+st.markdown("Model Performance (ROC-AUC)")
 
 performance_data = {
     "Model": ["Logistic Regression", "KNN", "SVM", "Decision Tree"],
