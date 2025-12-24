@@ -1,6 +1,6 @@
 Streamlit Link :- https://asteroid-hazard-prediction-by-snehil.streamlit.app/
 
-# 🚀 Asteroid Hazard Prediction System
+# Asteroid Hazard Prediction System
 
 An end-to-end Machine Learning project that predicts whether a **Near-Earth Object (NEO)** is potentially hazardous based on its physical and orbital characteristics.
 
@@ -14,7 +14,7 @@ This project demonstrates:
 
 ---
 
-## 🌌 Problem Statement
+## Problem Statement
 
 Near-Earth asteroids pose a potential threat to Earth. Early identification of **Potentially Hazardous Asteroids (PHAs)** is critical for planetary defense.
 
@@ -22,7 +22,7 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - Source: NASA Near-Earth Object (NEO) dataset
 - Type: Structured tabular data
@@ -37,7 +37,7 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 ---
 
-## 🧠 Machine Learning Techniques Used
+## Machine Learning Techniques Used
 
 ### 🔹 Classification
 - Logistic Regression
@@ -53,7 +53,7 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 ---
 
-## 🧪 Evaluation Metrics
+## Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -64,7 +64,7 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 - Interactive web application built using **Streamlit**
 - Users can input asteroid parameters and receive predictions
@@ -72,23 +72,23 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 asteroid-hazard-prediction/
-│
-├── data/ # Raw and processed datasets
-├── notebooks/ # EDA and experiments
-├── src/ # Core ML pipeline
-├── app/ # Streamlit web app
-├── models/ # Trained models
-├── reports/ # Final research report
-├── requirements.txt
-└── README.md
+
+data/ # Raw and processed datasets
+notebooks/ # EDA and experiments
+rc/ # Core ML pipeline
+app/ # Streamlit web app
+models/ # Trained models
+reports/ # Final research report
+requirements.txt
+README.md
 
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Compare performance of multiple ML models
 - Visualize asteroid behavior patterns
@@ -97,7 +97,7 @@ asteroid-hazard-prediction/
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Deep learning models
 - Real-time data integration
@@ -106,6 +106,6 @@ asteroid-hazard-prediction/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
