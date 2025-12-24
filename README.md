@@ -76,14 +76,14 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 
 asteroid-hazard-prediction/
 
-data/ # Raw and processed datasets
-notebooks/ # EDA and experiments
-rc/ # Core ML pipeline
-app/ # Streamlit web app
-models/ # Trained models
-reports/ # Final research report
-requirements.txt
-README.md
+- data/ # Raw and processed datasets
+- notebooks/ # EDA and experiments
+- rc/ # Core ML pipeline
+- app/ # Streamlit web app
+- models/ # Trained models
+- reports/ # Final research report
+- requirements.txt
+- README.md
 
 
 ---
