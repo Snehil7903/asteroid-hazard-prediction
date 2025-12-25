@@ -108,7 +108,7 @@ asteroid-hazard-prediction/
 
 This project is licensed under the MIT License.
 
-## 📄 Project Report
+## Project Report
 
 - **Report:**  
   [Asteroid Hazard Prediction System Using Machine Learning](report/Asteroid_Hazard_Prediction.pdf)
