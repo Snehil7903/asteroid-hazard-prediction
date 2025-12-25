@@ -133,3 +133,43 @@ performance_data = {
 
 st.table(pd.DataFrame(performance_data))
 
+with st.expander("Machine Learning Models Used"):
+    st.markdown("""
+    - **Logistic Regression:** Provides smooth probability estimates and is used for risk confidence.
+    - **KNN:** Classifies asteroids based on similarity to historical cases.
+    - **SVM:** A conservative classifier that focuses on safe vs unsafe separation.
+    - **Decision Tree:** Rule-based model offering interpretability but hard decisions.
+    """)
+
+with st.expander("Parameter Descriptions"):
+    st.markdown("""
+    **Absolute Magnitude (H):**  
+    A measure of an asteroid’s brightness. Lower values indicate larger asteroids.
+
+    **Estimated Diameter (Min / Max):**  
+    The possible size range of the asteroid in meters, based on NASA estimates.
+
+    **Relative Velocity (km/s):**  
+    The speed of the asteroid relative to Earth. Higher velocity increases impact energy.
+
+    **Miss Distance (AU):**  
+    The closest distance between the asteroid and Earth during approach.  
+    Distances ≤ 0.05 AU are considered potentially hazardous by NASA.
+    """)
+
+with st.expander("Why Predictions Change"):
+    st.write(
+        "Predictions change when asteroid parameters cross learned decision "
+        "boundaries. Miss distance has the strongest influence, while size and "
+        "velocity amplify risk. Small changes near NASA thresholds can "
+        "significantly affect the predicted hazard level."
+    )
+
+with st.expander("NASA Hazard Criteria"):
+    st.write(
+        "According to NASA, an asteroid is considered potentially hazardous if "
+        "its miss distance is less than or equal to 0.05 AU and its absolute "
+        "magnitude (H) is less than 22, indicating a sufficiently large object "
+        "making a close approach to Earth."
+    )
+
