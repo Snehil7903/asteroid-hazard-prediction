@@ -1,5 +1,3 @@
-Streamlit Link :- https://asteroid-hazard-prediction-by-snehil.streamlit.app/
-
 # Asteroid Hazard Prediction System
 
 An end-to-end Machine Learning project that predicts whether a **Near-Earth Object (NEO)** is potentially hazardous based on its physical and orbital characteristics.
@@ -109,3 +107,11 @@ asteroid-hazard-prediction/
 ## License
 
 This project is licensed under the MIT License.
+
+## 📄 Project Report
+
+- **Report:**  
+  [Asteroid Hazard Prediction System Using Machine Learning](report/Asteroid_Hazard_Prediction.pdf)
+
+- **Live Demo:**  
+  https://asteroid-hazard-prediction-by-snehil.streamlit.app/
