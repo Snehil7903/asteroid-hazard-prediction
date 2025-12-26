@@ -29,7 +29,6 @@ This project applies multiple machine learning algorithms to predict asteroid ha
   - Estimated diameter
   - Relative velocity
   - Miss distance
-  - Orbital eccentricity
 - Target:
   - `is_potentially_hazardous_asteroid` (Binary)
 
@@ -43,8 +42,6 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 - Support Vector Machine (SVM)
 - Decision Tree
 
-### 🔹 Regression
-- Linear Regression (Predicting miss distance / velocity)
 
 ### 🔹 Clustering
 - K-Means clustering for asteroid grouping
@@ -58,7 +55,6 @@ This project applies multiple machine learning algorithms to predict asteroid ha
 - Recall
 - F1-score
 - ROC-AUC
-- Confusion Matrix
 
 ---
 
@@ -76,7 +72,7 @@ asteroid-hazard-prediction/
 
 - data/ # Raw and processed datasets
 - notebooks/ # EDA and experiments
-- rc/ # Core ML pipeline
+- src/ # Core ML pipeline
 - app/ # Streamlit web app
 - models/ # Trained models
 - reports/ # Final research report
