@@ -11,6 +11,15 @@ svm = joblib.load("models/svm.pkl")
 dt = joblib.load("models/decision_tree.pkl")
 scaler = joblib.load("models/scaler.pkl")
 
+FEATURE_NAMES = [
+    "absolute_magnitude_h",
+    "estimated_diameter_min",
+    "estimated_diameter_max",
+    "relative_velocity",
+    "miss_distance"
+]
+
+
 
 st.set_page_config(page_title="Asteroid Hazard Prediction", layout="centered")
 
@@ -133,6 +142,26 @@ performance_data = {
 
 st.table(pd.DataFrame(performance_data))
 
+
+with st.expander("Asteroid Clustering (Unsupervised Learning)"):
+    st.image(
+        "notebooks/assets/asteroid_clustering.png",
+        caption=(
+            "K-Means clustering (3 clusters) visualized using PCA. "
+            "Clusters represent natural groupings of asteroids based on "
+            "size, velocity, and miss distance."
+        )
+    )
+
+    st.write(
+        "This clustering is used for exploratory analysis and helps "
+        "understand structural patterns in asteroid data. "
+        "It is not used directly for hazard prediction."
+    )
+
+
+
+
 with st.expander("Machine Learning Models Used"):
     st.markdown("""
     - **Logistic Regression:** Provides smooth probability estimates and is used for risk confidence.
@@ -156,20 +185,3 @@ with st.expander("Parameter Descriptions"):
     The closest distance between the asteroid and Earth during approach.  
     Distances ≤ 0.05 AU are considered potentially hazardous by NASA.
     """)
-
-with st.expander("Why Predictions Change"):
-    st.write(
-        "Predictions change when asteroid parameters cross learned decision "
-        "boundaries. Miss distance has the strongest influence, while size and "
-        "velocity amplify risk. Small changes near NASA thresholds can "
-        "significantly affect the predicted hazard level."
-    )
-
-with st.expander("NASA Hazard Criteria"):
-    st.write(
-        "According to NASA, an asteroid is considered potentially hazardous if "
-        "its miss distance is less than or equal to 0.05 AU and its absolute "
-        "magnitude (H) is less than 22, indicating a sufficiently large object "
-        "making a close approach to Earth."
-    )
-
